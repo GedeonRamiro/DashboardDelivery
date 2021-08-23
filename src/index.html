@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DashboardDelivery </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="font-Josefin-Sans bg-gray-100 ">
+
+    <div class='container mx-auto my-20'>
+        <div class='bg-white shadow rounded-xl'>
+            <div class='lg:grid lg:grid-cols-4'>
+                <div class='row-span-1 col-span-3 p-4'>
+                    
+                    <header>
+                        <div class='flex items-center'>
+                            <div class='flex flex-col lg:flex-row w-full'>
+                                <div class='flex justify-between lg:justify-start'>
+                                    <button class="flex flex-col outline-none ">
+                                        <span class="border-b-2 border-black h-2 w-4"></span>
+                                        <span class="border-b-2 border-black h-2 w-6"></span>
+                                        <span class="border-b-2 border-black h-2 w-4"></span>
+                                    </button>
+                                    <div class='flex'>
+                                        <h4 class='md:text-lg xl:text-xl font-semibold mt-2 ml-4 flex'>Restaurante Tailwind</h4>
+                                        <button class='text-xl ml-2 mt-2 outline-none'><i class="fas fa-angle-down"></i></button>
+                                    </div>
+                                    <div>
+                                      <button class='flex lg:hidden outline-none text-lg'><i class="fas fa-shopping-cart"></i></button>
+                                    </div>
+                                </div>
+                                <div class='flex justify-center'>
+                                    <form action="" class='lg:ml-20 xl-32'>
+                                        <button class='absolute mt-1 ml-2 text-lg text-gray-400 outline-none '> <i class="fas fa-search"></i></button>
+                                        <input type="text" placeholder="O que você gostaria de comer hoje?"
+                                        class="bg-gray-200 w-96 p-1 pl-10 rounded-lg border border-transparent focus:outline-none focus:ring-2 focus:ring-yellow-300">
+                                    </form>
+                               </div>
+                            </div>
+                        </div>
+                    </header> 
+                  
+                    <section class='banner'>
+                        <div class='my-10 flex'>
+                            <div class='mr-6'>
+                                <img src="imagens/banner01.jpg" alt="" class='rounded-xl'>
+                            </div>
+                            <div class='flex flex-col justify-center md:mr-10'>
+                               <button class='bg-yellow-100 w-2 h-2 sm:w-4 sm:h-4 my-1 rounded-xl hover:bg-yellow-600 outline-none'></button>
+                               <button class='bg-yellow-600 w-2 h-2 sm:w-4 sm:h-4 my-1 rounded-xl hover:bg-yellow-600 outline-none'></button>
+                               <button class='bg-yellow-100 w-2 h-2 sm:w-4 sm:h-4 my-1 rounded-xl hover:bg-yellow-600 outline-none'></button>
+                               <button class='bg-yellow-100 w-2 h-2 sm:w-4 sm:h-4 my-1 rounded-xl hover:bg-yellow-600 outline-none'></button>
+                               <button class='bg-yellow-100 w-2 h-2 sm:w-4 sm:h-4 my-1 rounded-xl hover:bg-yellow-600 outline-none'></button>
+                            </div>
+                        </div>
+                    </section>
+                  
+                    <h4 class='md:text-lg'>Escolha uma das categorias</h4>
+
+                    <section class='tab-button'>
+                        <div class='overflow-x-auto'>
+                            <div class='flex text-base md:text-lg mb-2'>
+                                <div class='mr-4'>
+                                    <button class='flex justify-center items-center bg-yellow-300 rounded shadow-md py-1 px-2 outline-none'>
+                                        <i class="fas fa-utensils"></i>
+                                        <p class='ml-2 pt-1'>All</p>
+                                    </button>
+                                </div>
+                                <div class='mr-4'>
+                                    <button class='flex justify-center items-center rounded py-1 px-2 outline-none'>
+                                        <i class="fas fa-hamburger"></i>
+                                        <p class='ml-2 pt-1'> Hamburger</p>
+                                    </button>
+                                </div>
+                                <div class='mr-4'>
+                                    <button class='flex justify-center items-center rounded py-1 px-2 outline-none'>
+                                        <i class="fas fa-fish"></i>
+                                        <p class='ml-2 pt-1'> Peixe</p>
+                                    </button>
+                                </div>
+                                <div class='mr-4'>
+                                    <button class='flex justify-center items-center rounded py-1 px-2 outline-none'>
+                                        <i class="fas fa-apple-alt"></i>
+                                        <p class='ml-2 pt-1'> Frutas</p>
+                                    </button>
+                                </div>
+                                <div class='mr-4'>
+                                    <button class='flex justify-center items-center rounded py-1 px-2 outline-none'>
+                                        <i class="fas fa-pizza-slice"></i>
+                                        <p class='ml-2 pt-1'> Pizza</p>
+                                    </button>
+                                </div>
+                                <div class='mr-4'>
+                                    <button class='flex justify-center items-center rounded py-1 px-2 outline-none'>
+                                        <i class="fas fa-cheese"></i>
+                                        <p class='ml-2 pt-1'> Bolo</p>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <section class='produtos'>
+                        <div class='grid grid-cols-2 gap-4 sm:flex sm:flex-wrap'>
+                            <div class='w-40 p-2 text-sm'>
+                                <img src="http://lorempixel.com/500/300/food?1" alt="" class='rounded'>
+                                <p class='uppercase  mt-3'>Pizza calabresa</p>
+                                <p class='text-gray-400 font-extralight'>Mussarela, calabresa e cebola, oregano</p>
+                                <p class='text-gray-400 font-extralight mt-2'><i class="far fa-clock"></i> 30 min</p>
+                                <button class='bg-yellow-400 w-full uppercase pt-2 pb-1 text-xs text-white rounded-sm outline-none'>ADICIONAR</button>
+                            </div>
+                            <div class='w-40 p-2 text-sm'>
+                                <img src="http://lorempixel.com/500/300/food?2" alt="" class='rounded'>
+                                <p class='uppercase  mt-3'>Pizza calabresa</p>
+                                <p class='text-gray-400 font-extralight'>Mussarela, calabresa e cebola, oregano</p>
+                                <p class='text-gray-400 font-extralight mt-2'><i class="far fa-clock"></i> 30 min</p>
+                                <button class='bg-yellow-400 w-full uppercase pt-2 pb-1 text-xs text-white rounded-sm outline-none'>ADICIONAR</button>
+                            </div>
+                            <div class='w-40 p-2 text-sm'>
+                                <img src="http://lorempixel.com/500/300/food?3" alt="" class='rounded'>
+                                <p class='uppercase  mt-3'>Pizza calabresa</p>
+                                <p class='text-gray-400 font-extralight'>Mussarela, calabresa e cebola, oregano</p>
+                                <p class='text-gray-400 font-extralight mt-2'><i class="far fa-clock"></i> 30 min</p>
+                                <button class='bg-yellow-400 w-full uppercase pt-2 pb-1 text-xs text-white rounded-sm outline-none'>ADICIONAR</button>
+                            </div>
+                            <div class='w-40 p-2 text-sm'>
+                                <img src="http://lorempixel.com/500/300/food?4" alt="" class='rounded'>
+                                <p class='uppercase  mt-3'>Pizza calabresa</p>
+                                <p class='text-gray-400 font-extralight'>Mussarela, calabresa e cebola, oregano</p>
+                                <p class='text-gray-400 font-extralight mt-2'><i class="far fa-clock"></i> 30 min</p>
+                                <button class='bg-yellow-400 w-full uppercase pt-2 pb-1 text-xs text-white rounded-sm outline-none'>ADICIONAR</button>
+                            </div>
+                            <div class='w-40 p-2 text-sm'>
+                                <img src="http://lorempixel.com/500/300/food?5" alt="" class='rounded'>
+                                <p class='uppercase  mt-3'>Pizza calabresa</p>
+                                <p class='text-gray-400 font-extralight'>Mussarela, calabresa e cebola, oregano</p>
+                                <p class='text-gray-400 font-extralight mt-2'><i class="far fa-clock"></i> 30 min</p>
+                                <button class='bg-yellow-400 w-full uppercase pt-2 pb-1 text-xs text-white rounded-sm outline-none'>ADICIONAR</button>
+                            </div>
+                            <div class='w-40 p-2 text-sm'>
+                                <img src="http://lorempixel.com/500/300/food?6" alt="" class='rounded'>
+                                <p class='uppercase  mt-3'>Pizza calabresa</p>
+                                <p class='text-gray-400 font-extralight'>Mussarela, calabresa e cebola, oregano</p>
+                                <p class='text-gray-400 font-extralight mt-2'><i class="far fa-clock"></i> 30 min</p>
+                                <button class='bg-yellow-400 w-full uppercase pt-2 pb-1 text-xs text-white rounded-sm outline-none'>ADICIONAR</button>
+                            </div>
+                            <div class='w-40 p-2 text-sm'>
+                                <img src="http://lorempixel.com/500/300/food?7" alt="" class='rounded'>
+                                <p class='uppercase  mt-3'>Pizza calabresa</p>
+                                <p class='text-gray-400 font-extralight'>Mussarela, calabresa e cebola, oregano</p>
+                                <p class='text-gray-400 font-extralight mt-2'><i class="far fa-clock"></i> 30 min</p>
+                                <button class='bg-yellow-400 w-full uppercase pt-2 pb-1 text-xs text-white rounded-sm outline-none'>ADICIONAR</button>
+                            </div>
+                            <div class='w-40 p-2 text-sm'>
+                                <img src="http://lorempixel.com/500/300/food?14" alt="" class='rounded'>
+                                <p class='uppercase  mt-3'>Pizza calabresa</p>
+                                <p class='text-gray-400 font-extralight'>Mussarela, calabresa e cebola, oregano</p>
+                                <p class='text-gray-400 font-extralight mt-2'><i class="far fa-clock"></i> 30 min</p>
+                                <button class='bg-yellow-400 w-full uppercase pt-2 pb-1 text-xs text-white rounded-sm outline-none'>ADICIONAR</button>
+                            </div>
+                            <div class='w-40 p-2 text-sm'>
+                                <img src="http://lorempixel.com/500/300/food?9" alt="" class='rounded'>
+                                <p class='uppercase  mt-3'>Pizza calabresa</p>
+                                <p class='text-gray-400 font-extralight'>Mussarela, calabresa e cebola, oregano</p>
+                                <p class='text-gray-400 font-extralight mt-2'><i class="far fa-clock"></i> 30 min</p>
+                                <button class='bg-yellow-400 w-full uppercase pt-2 pb-1 text-xs text-white rounded-sm outline-none'>ADICIONAR</button>
+                            </div>
+                            <div class='w-40 p-2 text-sm'>
+                                <img src="http://lorempixel.com/500/300/food?10" alt="" class='rounded'>
+                                <p class='uppercase  mt-3'>Pizza calabresa</p>
+                                <p class='text-gray-400 font-extralight'>Mussarela, calabresa e cebola, oregano</p>
+                                <p class='text-gray-400 font-extralight mt-2'><i class="far fa-clock"></i> 30 min</p>
+                                <button class='bg-yellow-400 w-full uppercase pt-2 pb-1 text-xs text-white rounded-sm outline-none'>ADICIONAR</button>
+                            </div>
+                            <div class='w-40 p-2 text-sm'>
+                                <img src="http://lorempixel.com/500/300/food?19" alt="" class='rounded'>
+                                <p class='uppercase  mt-3'>Pizza calabresa</p>
+                                <p class='text-gray-400 font-extralight'>Mussarela, calabresa e cebola, oregano</p>
+                                <p class='text-gray-400 font-extralight mt-2'><i class="far fa-clock"></i> 30 min</p>
+                                <button class='bg-yellow-400 w-full uppercase pt-2 pb-1 text-xs text-white rounded-sm outline-none'>ADICIONAR</button>
+                            </div>
+                            <div class='w-40 p-2 text-sm'>
+                                <img src="http://lorempixel.com/500/300/food?12" alt="" class='rounded'>
+                                <p class='uppercase  mt-3'>Pizza calabresa</p>
+                                <p class='text-gray-400 font-extralight'>Mussarela, calabresa e cebola, oregano</p>
+                                <p class='text-gray-400 font-extralight mt-2'><i class="far fa-clock"></i> 30 min</p>
+                                <button class='bg-yellow-400 w-full uppercase pt-2 pb-1 text-xs text-white rounded-sm outline-none'>ADICIONAR</button>
+                            </div>
+                            <div class='w-40 p-2 text-sm'>
+                                <img src="http://lorempixel.com/500/300/food?13" alt="" class='rounded'>
+                                <p class='uppercase  mt-3'>Pizza calabresa</p>
+                                <p class='text-gray-400 font-extralight'>Mussarela, calabresa e cebola, oregano</p>
+                                <p class='text-gray-400 font-extralight mt-2'><i class="far fa-clock"></i> 30 min</p>
+                                <button class='bg-yellow-400 w-full uppercase pt-2 pb-1 text-xs text-white rounded-sm outline-none'>ADICIONAR</button>
+                            </div>
+                            <div class='w-40 p-2 text-sm'>
+                                <img src="http://lorempixel.com/500/300/food?14" alt="" class='rounded'>
+                                <p class='uppercase  mt-3'>Pizza calabresa</p>
+                                <p class='text-gray-400 font-extralight'>Mussarela, calabresa e cebola, oregano</p>
+                                <p class='text-gray-400 font-extralight mt-2'><i class="far fa-clock"></i> 30 min</p>
+                                <button class='bg-yellow-400 w-full uppercase pt-2 pb-1 text-xs text-white rounded-sm outline-none'>ADICIONAR</button>
+                            </div>
+                            <div class='w-40 p-2 text-sm'>
+                                <img src="http://lorempixel.com/500/300/food?34" alt="" class='rounded'>
+                                <p class='uppercase  mt-3'>Pizza calabresa</p>
+                                <p class='text-gray-400 font-extralight'>Mussarela, calabresa e cebola, oregano</p>
+                                <p class='text-gray-400 font-extralight mt-2'><i class="far fa-clock"></i> 30 min</p>
+                                <button class='bg-yellow-400 w-full uppercase pt-2 pb-1 text-xs text-white rounded-sm outline-none'>ADICIONAR</button>
+                            </div>
+
+                        </div>
+                    </section>
+
+                </div>
+
+                
+                <div class='flex-col row-span-1 bg-gray-50 p-4 rounded-r-xl hidden lg:flex'>
+                    <h3 class='text-xl font-semibold'>Meu carrinho</h3>
+                    <div class='grid grid-cols-4 my-4'>
+                        <div class='grid grid-cols-2 col-span-3'>
+                            <img src="http://lorempixel.com/500/300/food?1" alt="" class='rounded w-32'>
+                            <div class='pl-2'>
+                                <p class='ml-2'>Pizza calabresa</p>
+                                <div class='flex justify-between items-center border w-16 rounded-lg'>
+                                    <button class='px-1 text-xl outline-none'>-</button>
+                                    <span>2</span>
+                                    <button class='px-1 text-xl outline-none'>+</button>
+                                </div>
+                            </div>
+                        </div>    
+                        <div class='text-right '>
+                           <p> R$ 35,00</p>
+                           <button class='outline-none'> <i class="far fa-trash-alt"></i></button>
+                        </div>
+                    </div>
+                    <div class='grid grid-cols-4 my-4'>
+                        <div class='grid grid-cols-2 col-span-3'>
+                            <img src="http://lorempixel.com/500/300/food?2" alt="" class='rounded w-32'>
+                            <div class='pl-2'>
+                                <p class='ml-2'>Pizza calabresa</p>
+                                <div class='flex justify-between items-center border w-16 rounded-lg'>
+                                    <button class='px-1 text-xl outline-none'>-</button>
+                                    <span>5</span>
+                                    <button class='px-1 text-xl outline-none'>+</button>
+                                </div>
+                            </div>
+                        </div>    
+                        <div class='text-right '>
+                           <p> R$ 35,00</p>
+                           <button class='outline-none'> <i class="far fa-trash-alt"></i></button>
+                        </div>
+                    </div>
+                    <div class='grid grid-cols-4 my-4'>
+                        <div class='grid grid-cols-2 col-span-3'>
+                            <img src="http://lorempixel.com/500/300/food?3" alt="" class='rounded w-32'>
+                            <div class='pl-2'>
+                                <p class='ml-2'>Pizza calabresa</p>
+                                <div class='flex justify-between items-center border w-16 rounded-lg'>
+                                    <button class='px-1 text-xl outline-none'>-</button>
+                                    <span>4</span>
+                                    <button class='px-1 text-xl outline-none'>+</button>
+                                </div>
+                            </div>
+                        </div>    
+                        <div class='text-right '>
+                           <p> R$ 35,00</p>
+                           <button class='outline-none'> <i class="far fa-trash-alt"></i></button>
+                        </div>
+                    </div>
+                    <div class='grid grid-cols-4 my-4'>
+                        <div class='grid grid-cols-2 col-span-3'>
+                            <img src="http://lorempixel.com/500/300/food?4" alt="" class='rounded w-32'>
+                            <div class='pl-2'>
+                                <p class='ml-2'>Pizza calabresa</p>
+                                <div class='flex justify-between items-center border w-16 rounded-lg'>
+                                    <button class='px-1 text-xl outline-none'>-</button>
+                                    <span>1</span>
+                                    <button class='px-1 text-xl outline-none'>+</button>
+                                </div>
+                            </div>
+                        </div>    
+                        <div class='text-right '>
+                           <p> R$ 35,00</p>
+                           <button class='outline-none'> <i class="far fa-trash-alt"></i></button>
+                        </div>
+                    </div>
+
+                    <div class='flex bg-yellow-100 p-4 rounded-md justify-center items-center border border-yellow-200'>
+                        <p class='text-yellow-400 text-lg mx-2'>Você tem 3 cupons</p>
+                        <button class='bg-yellow-400 text-white font-semibold rounded-md px-4 py-2 mx-2 outline-none'> User agora </button>
+                    </div>
+
+                    <div class='border-b-2 border-t-2 mt-32 mb-10 '>
+                        <div class='flex justify-between py-1'>
+                            <p>Subtotal</p>
+                            <span>R$ 145,00</span>
+                        </div>
+                        <div class='flex justify-between py-1'>
+                            <p>Delivery</p>
+                            <span>R$ 9,00</span>
+                        </div>
+                        <div class='flex justify-between py-1'>
+                            <p>Taxa</p>
+                            <span>R$ 45,00</span>
+                        </div>    
+                    </div>
+                    <div class='flex items-center'>
+
+                    </div>
+                    <div class='flex justify-between'>
+                        <p class='text-xl font-semibold'>Total</p>
+                        <span class='text-xl font-semibold'>R$ 268,00</span>
+                    </div>
+                    <button class='bg-yellow-400 text-white text-xl p-3 mt-10 rounded-full outline-none'>Pedido e checkout <i class="fas fa-arrow-left transform rotate-180"></i></button>
+
+                    
+                       
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
