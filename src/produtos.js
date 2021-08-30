@@ -1,4 +1,4 @@
-export const json = [
+export const produtos = [
     {
         id:'1acb',
         nome: 'Bolo chocolate',
@@ -6,6 +6,7 @@ export const json = [
         tempo: 10,
         preco: 4,
         imagem: "http://lorempixel.com/500/300/food?1",
+        icon: 'fas fa-cheese',
         categoria: 'Bolo'
     },
     {
@@ -15,6 +16,7 @@ export const json = [
         tempo: 7,
         preco: 5,
         imagem: "http://lorempixel.com/500/300/food?2",
+        icon: 'fas fa-cheese',
         categoria: 'Bolo'
     },
     {
@@ -24,6 +26,7 @@ export const json = [
         tempo: 10,
         preco: 7,
         imagem: "http://lorempixel.com/500/300/food?3",
+        icon: 'fas fa-cheese',
         categoria: 'Bolo'
     },
     {
@@ -33,6 +36,7 @@ export const json = [
         tempo: 30,
         preco: 32,
         imagem: "http://lorempixel.com/500/300/food?4",
+        icon: 'fas fa-pizza-slice',
         categoria: 'Pizza'
     },
     {
@@ -42,6 +46,7 @@ export const json = [
         tempo: 30,
         preco: 35,
         imagem: "http://lorempixel.com/500/300/food?5",
+        icon: 'fas fa-pizza-slice',
         categoria: 'Pizza'
     },
     {
@@ -51,6 +56,7 @@ export const json = [
         tempo: 12,
         preco: 18,
         imagem: "http://lorempixel.com/500/300/food?6",
+        icon: 'fas fa-hamburger',
         categoria: 'Hambúrguer'
     },
     {
@@ -60,6 +66,7 @@ export const json = [
         tempo: 15,
         preco: 13,
         imagem: "http://lorempixel.com/500/300/food?7",
+        icon: 'fas fa-hamburger',
         categoria: 'Hambúrguer'
     },
     {
@@ -69,6 +76,7 @@ export const json = [
         tempo: 17,
         preco: 20,
         imagem: "http://lorempixel.com/500/300/food?8",
+        icon: 'fas fa-hamburger',
         categoria: 'Hambúrguer'
     },
     {
@@ -78,6 +86,7 @@ export const json = [
         tempo: 40,
         preco: 58,
         imagem: "http://lorempixel.com/500/300/food?9",
+        icon: 'fas fa-fish',
         categoria: 'Peixe'
     },
     {
@@ -87,6 +96,7 @@ export const json = [
         tempo: 38,
         preco: 65,
         imagem: "http://lorempixel.com/500/300/food?10",
+        icon: 'fas fa-fish',
         categoria: 'Peixe'
     },
     {
@@ -96,6 +106,7 @@ export const json = [
         tempo: 5,
         preco: 3,
         imagem: "http://lorempixel.com/500/300/food?10",
+        icon: 'fas fa-apple-alt',
         categoria: 'Frutas'
     },
     {
@@ -105,6 +116,7 @@ export const json = [
         tempo: 7,
         preco: 4,
         imagem: "http://lorempixel.com/500/300/food?11",
+        icon: 'fas fa-apple-alt',
         categoria: 'Frutas'
     }
 ]

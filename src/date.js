@@ -1,6 +1,6 @@
-import {json} from './json.js'
+import {produtos} from './produtos.js'
 
-export const agrupadoPorId = json.reduce((acc, produto) => {
+export const agrupadoPorId = produtos.reduce((acc, produto) => {
     acc[produto.id] = produto
     return acc
 }, {})
