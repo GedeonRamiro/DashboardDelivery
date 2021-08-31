@@ -4,7 +4,7 @@ export const produtos = [
         nome: 'Bolo chocolate',
         descricao: 'cobertura chocolate e granulado',
         tempo: 10,
-        preco: 4,
+        preco: 4.5,
         imagem: "http://lorempixel.com/500/300/food?1",
         icon: 'fas fa-cheese',
         categoria: 'Bolo'
@@ -24,7 +24,7 @@ export const produtos = [
         nome: 'Bolo de Amêndoas',
         descricao: 'Recheios de trufados',
         tempo: 10,
-        preco: 7,
+        preco: 7.2,
         imagem: "http://lorempixel.com/500/300/food?3",
         icon: 'fas fa-cheese',
         categoria: 'Bolo'
@@ -34,7 +34,7 @@ export const produtos = [
         nome: 'pizza calabresa',
         descricao: 'Mussarela, calabresa, cebola e oregano',
         tempo: 30,
-        preco: 32,
+        preco: 32.7,
         imagem: "http://lorempixel.com/500/300/food?4",
         icon: 'fas fa-pizza-slice',
         categoria: 'Pizza'
@@ -44,7 +44,7 @@ export const produtos = [
         nome: 'pizza nordestina',
         descricao: 'Carne de sol, azeite, orégano e azeitonas',
         tempo: 30,
-        preco: 35,
+        preco: 35.5,
         imagem: "http://lorempixel.com/500/300/food?5",
         icon: 'fas fa-pizza-slice',
         categoria: 'Pizza'
@@ -64,7 +64,7 @@ export const produtos = [
         nome: 'Angus Salad',
         descricao: 'Pão, presunto e cebola roxa',
         tempo: 15,
-        preco: 13,
+        preco: 13.2,
         imagem: "http://lorempixel.com/500/300/food?7",
         icon: 'fas fa-hamburger',
         categoria: 'Hambúrguer'
@@ -74,7 +74,7 @@ export const produtos = [
         nome: 'Angus bacon',
         descricao: 'Pão, bacon e queijo',
         tempo: 17,
-        preco: 20,
+        preco: 20.9,
         imagem: "http://lorempixel.com/500/300/food?8",
         icon: 'fas fa-hamburger',
         categoria: 'Hambúrguer'
@@ -104,7 +104,7 @@ export const produtos = [
         nome: 'Maça de chocolate',
         descricao: 'Coco, confete e granulado ',
         tempo: 5,
-        preco: 3,
+        preco: 3.2,
         imagem: "http://lorempixel.com/500/300/food?10",
         icon: 'fas fa-apple-alt',
         categoria: 'Frutas'
@@ -114,7 +114,7 @@ export const produtos = [
         nome: 'Banana empanada',
         descricao: 'Leite condensado e canela',
         tempo: 7,
-        preco: 4,
+        preco: 4.5,
         imagem: "http://lorempixel.com/500/300/food?11",
         icon: 'fas fa-apple-alt',
         categoria: 'Frutas'
