@@ -51,7 +51,7 @@ export const produtos = [
     },
     {
         id:'4efg',
-        nome: 'Angus quarter',
+        nome: 'Hambúrguer Angus quarter',
         descricao: 'Pão, quiejo e blend angus',
         tempo: 12,
         preco: 18,
@@ -61,7 +61,7 @@ export const produtos = [
     },
     {
         id:'3ahj',
-        nome: 'Angus Salad',
+        nome: 'Hambúrguer Angus Salad',
         descricao: 'Pão, presunto e cebola roxa',
         tempo: 15,
         preco: 13.2,
@@ -71,7 +71,7 @@ export const produtos = [
     },
     {
         id:'7qpr',
-        nome: 'Angus bacon',
+        nome: 'Hambúrguer Angus bacon',
         descricao: 'Pão, bacon e queijo',
         tempo: 17,
         preco: 20.9,

@@ -1,10 +1,38 @@
 import { produtos }  from '../produtos.js'
 
-
+const tabBtnView = document.getElementById('categorias-btn')
 const cardProdutoView = document.getElementById('card-produto') 
 
-export default function cardProduto (){
-    produtos.map(produto => {
+export default function cardProdutoCategoria (event){
+ 
+    const elemnt =  event.target.getAttribute('id')
+    if(elemnt === 'categorias-btn') return
+
+    let divCurrent = event.target
+    while(divCurrent.nodeName !== 'BUTTON'){
+      divCurrent = divCurrent.parentElement
+    }
+
+    const btnAction = divCurrent.id
+
+    const TypeBtn = {
+        btnTabAll: 'All',
+        btnTabBolo: 'Bolo',
+        btnTabPizza: 'Pizza',
+        btnTabHambúrguer: 'Hambúrguer',
+        btnTabPeixe: 'Peixe',
+        btnTabFrutas: 'Frutas'
+      }[btnAction]
+
+
+    const categoriaFilter = produtos.filter(produto => {
+        const result = TypeBtn === 'All' ? produto.categoria : TypeBtn
+        return produto.categoria === result
+    })
+    
+  
+    cardProdutoView.innerHTML = ''
+    categoriaFilter.map(produto => {
         const div = document.createElement('div')
         div.classList = 'w-40 p-2 text-sm flex flex-col justify-between'
         const img = document.createElement('img')
@@ -44,17 +72,4 @@ export default function cardProduto (){
     })
 }
 
-
-
-/* <section class='produtos'>
-    <div id='card-produto' class='grid grid-cols-2 gap-4 sm:flex sm:flex-wrap'>
-        <div class='w-40 p-2 text-sm'>
-            <img src="http://lorempixel.com/500/300/food?1" alt="" class='rounded'>
-            <p class='uppercase  mt-3'>Pizza calabresa</p>
-            <p class='text-gray-400 font-extralight'>Mussarela, calabresa e cebola, oregano</p>
-            <p class='text-gray-400 font-extralight mt-2'><i class="far fa-clock"></i> 30 min</p>
-            <p class='mt-2'><i class="far fa-money-bill-alt"></i> R$ 35,00</p>
-            <button class='bg-yellow-400 w-full uppercase pt-2 pb-1 text-xs text-white rounded-sm outline-none'>ADICIONAR</button>
-        </div> 
-    </div>
-</section> */
+tabBtnView.addEventListener('click', cardProdutoCategoria)
