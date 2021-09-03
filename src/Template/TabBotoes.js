@@ -1,5 +1,3 @@
-import { produtos }  from '../produtos.js'
-
 
 const tabBtnView = document.getElementById('categorias-btn')
 

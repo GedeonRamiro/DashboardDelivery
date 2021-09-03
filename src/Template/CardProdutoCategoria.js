@@ -32,7 +32,7 @@ export default function cardProdutoCategoria (event){
     
   
     cardProdutoView.innerHTML = ''
-    categoriaFilter.map(produto => {
+    categoriaFilter.map((produto, index) => {
         const div = document.createElement('div')
         div.classList = 'w-40 p-2 text-sm flex flex-col justify-between'
         const img = document.createElement('img')
@@ -55,7 +55,8 @@ export default function cardProdutoCategoria (event){
         const iconPreco = document.createElement('i')
         iconPreco.classList = 'far fa-money-bill-alt ml-2'
         const btnAdd =  document.createElement('button')
-        btnAdd.classList = 'bg-yellow-400 w-full uppercase pt-2 pb-1 text-xs text-white rounded-sm outline-none'
+        btnAdd.classList = 'btn-add bg-yellow-400 w-full uppercase pt-2 pb-1 text-xs text-white rounded-sm outline-none'
+        btnAdd.setAttribute('data-index', `${index}`)
         btnAdd.textContent = 'ADICIONAR'
 
         pTempo.appendChild(iconTempo)
