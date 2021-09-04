@@ -1,14 +1,13 @@
-import {produtos} from '../produtos.js'
-import { adcionarItemCarrinho } from '../actions/adcionar.js'
-import { carrinho } from '../actions/adcionar.js'
+
+import { carrinho } from '../State/carrinho.js'
 
 const carrinhoView = document.getElementById('carrinho')
 
 export default function CarrinhoTemplate(){
-
+    carrinhoView.innerHTML = ''
     Object.values(carrinho).map(produto => produto).map((produto, index) => {
      
-        const {id ,imagem, nome, quantidade} = produto
+        const {id ,imagem, nome, preco, quantidade} = produto
 
         const divCarrino = document.createElement('div')
         divCarrino.classList = 'grid grid-cols-4 my-4'
@@ -39,7 +38,7 @@ export default function CarrinhoTemplate(){
         const divPreco = document.createElement('div')
         divPreco.classList = 'text-right btn-add'
         const pPreco = document.createElement('p')
-        pPreco.textContent = 'R$ 35,00'
+        pPreco.textContent = `R$ ${preco}`
         const btnIcon = document.createElement('button')
         btnIcon.classList = 'outline-none btn-delete'
         btnIcon.setAttribute('data-produto-id', `${id}`)
@@ -71,6 +70,8 @@ export default function CarrinhoTemplate(){
     })
       
 }
+
+
 
 
 

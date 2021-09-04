@@ -1,11 +1,10 @@
 import { produtos }  from '../produtos.js'
 
-
 const cardProdutoView = document.getElementById('card-produto') 
 
 export default function cardProduto (){
     
-    produtos.map((produto, index) => {
+    produtos.map(produto => {
         
         const div = document.createElement('div')
         div.classList = 'w-40 p-2 text-sm flex flex-col justify-between'
@@ -30,8 +29,10 @@ export default function cardProduto (){
         iconPreco.classList = 'far fa-money-bill-alt ml-2'
         const btnAdd =  document.createElement('button')
         btnAdd.classList = 'btn-add bg-yellow-400 w-full uppercase pt-2 pb-1 text-xs text-white rounded-sm outline-none'
-        btnAdd.setAttribute('data-index', `${index}`)
+        btnAdd.setAttribute('data-id', `${produto.id}`)
         btnAdd.textContent = 'ADICIONAR'
+      
+
 
         pTempo.appendChild(iconTempo)
         pPreco.appendChild(iconPreco)

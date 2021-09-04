@@ -2,7 +2,6 @@ import {produtos}  from '../produtos.js'
 
 const categoriaBtn = document.getElementById('categorias-btn') 
 
-
   const categoriaItem = produtos.reduce((acc, produto) => (
         [
             ...acc,
