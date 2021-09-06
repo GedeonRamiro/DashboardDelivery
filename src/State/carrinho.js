@@ -1,5 +1,5 @@
 export const carrinho = {
-   /*    '1acb': {
+     /*  '1acb': {
           id:'1acb',
           nome: 'Bolo chocolate',
           descricao: 'cobertura chocolate e granulado',

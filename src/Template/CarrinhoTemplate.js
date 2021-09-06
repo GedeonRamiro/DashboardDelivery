@@ -5,10 +5,10 @@ const carrinhoView = document.getElementById('carrinho')
 
 export default function CarrinhoTemplate(){
     carrinhoView.innerHTML = ''
-    Object.values(carrinho).map(produto => produto).map((produto, index) => {
-     
-        const {id ,imagem, nome, preco, quantidade} = produto
+    Object.values(carrinho).map(produto => produto).map(produto => {
 
+        const {id ,imagem, nome, preco, quantidade} = produto
+        
         const divCarrino = document.createElement('div')
         divCarrino.classList = 'grid grid-cols-4 my-4'
     
@@ -29,6 +29,8 @@ export default function CarrinhoTemplate(){
         const btnDecrementa = document.createElement('button')
         btnDecrementa.classList = 'px-1 text-xl outline-none'
         btnDecrementa.textContent = '-'
+    
+       
         const quantidadeSpan = document.createElement('span')
         quantidadeSpan.textContent = `${quantidade}`
         const btnIncrementa = document.createElement('button')
@@ -40,10 +42,11 @@ export default function CarrinhoTemplate(){
         const pPreco = document.createElement('p')
         pPreco.textContent = `R$ ${preco}`
         const btnIcon = document.createElement('button')
-        btnIcon.classList = 'outline-none btn-delete'
+        btnIcon.classList = 'btn-delete outline-none btn-delete'
         btnIcon.setAttribute('data-produto-id', `${id}`)
+       
         const icon = document.createElement('i')
-        icon.classList = 'far fa-trash-alt'
+        icon.classList = 'btn-delete far fa-trash-alt'
         
     
         btnIcon.appendChild(icon)
@@ -70,10 +73,6 @@ export default function CarrinhoTemplate(){
     })
       
 }
-
-
-
-
 
 /* 
 <h3 class='text-xl font-semibold'>Meu carrinho</h3>

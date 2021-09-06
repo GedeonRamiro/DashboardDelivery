@@ -31,7 +31,7 @@ export const produtos = [
     },
     {
         id:'2lio',
-        nome: 'pizza calabresa',
+        nome: 'Pizza calabresa',
         descricao: 'Mussarela, calabresa, cebola e oregano',
         tempo: 30,
         preco: 32.7,
@@ -41,7 +41,7 @@ export const produtos = [
     },
     {
         id:'9zdt',
-        nome: 'pizza nordestina',
+        nome: 'Pizza nordestina',
         descricao: 'Carne de sol, azeite, orégano e azeitonas',
         tempo: 30,
         preco: 35.5,
