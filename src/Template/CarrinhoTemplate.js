@@ -11,7 +11,7 @@ export default function CarrinhoTemplate(){
         
         const divCarrino = document.createElement('div')
         divCarrino.classList = 'grid grid-cols-4 my-4'
-    
+     
         const divItem = document.createElement('div')
         divItem.classList = 'grid grid-cols-2 col-span-3'
     
@@ -27,20 +27,22 @@ export default function CarrinhoTemplate(){
         const divQuantidade = document.createElement('div')
         divQuantidade.classList = 'flex justify-between items-center border w-16 rounded-lg'
         const btnDecrementa = document.createElement('button')
-        btnDecrementa.classList = 'px-1 text-xl outline-none'
+        btnDecrementa.classList = 'btn-decrementar px-1 text-2xl outline-none' 
         btnDecrementa.textContent = '-'
-    
-       
+        btnDecrementa.setAttribute('data-produto-id', `${id}`)
+     
+        
         const quantidadeSpan = document.createElement('span')
         quantidadeSpan.textContent = `${quantidade}`
         const btnIncrementa = document.createElement('button')
-        btnIncrementa.classList = 'px-1 text-xl outline-none'
+        btnIncrementa.classList = 'btn-incrementar px-1 text-xl outline-none'
         btnIncrementa.textContent = '+'
+        btnIncrementa.setAttribute('data-produto-id', `${id}`)
     
         const divPreco = document.createElement('div')
         divPreco.classList = 'text-right btn-add'
         const pPreco = document.createElement('p')
-        pPreco.textContent = `R$ ${preco}`
+        pPreco.textContent = `R$ ${preco.toFixed(2)}`
         const btnIcon = document.createElement('button')
         btnIcon.classList = 'btn-delete outline-none btn-delete'
         btnIcon.setAttribute('data-produto-id', `${id}`)
@@ -69,7 +71,6 @@ export default function CarrinhoTemplate(){
         
         carrinhoView.appendChild(divCarrino)
     
-
     })
       
 }

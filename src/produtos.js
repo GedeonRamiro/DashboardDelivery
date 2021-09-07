@@ -24,7 +24,7 @@ export const produtos = [
         nome: 'Bolo de Amêndoas',
         descricao: 'Recheios de trufados',
         tempo: 10,
-        preco: 7.2,
+        preco: 7.25,
         imagem: "http://lorempixel.com/500/300/food?3",
         icon: 'fas fa-cheese',
         categoria: 'Bolo'
@@ -104,7 +104,7 @@ export const produtos = [
         nome: 'Maça de chocolate',
         descricao: 'Coco, confete e granulado ',
         tempo: 5,
-        preco: 3.2,
+        preco: 3.25,
         imagem: "http://lorempixel.com/500/300/food?10",
         icon: 'fas fa-apple-alt',
         categoria: 'Frutas'

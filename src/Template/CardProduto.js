@@ -24,7 +24,7 @@ export default function cardProduto (){
         iconTempo.classList = 'far fa-clock ml-2'
         const pPreco = document.createElement('p')
         pPreco.classList = 'mt-2'
-        pPreco.textContent = `R$ ${produto.preco}`
+        pPreco.textContent = `R$ ${produto.preco.toFixed(2)}`
         const iconPreco = document.createElement('i')
         iconPreco.classList = 'far fa-money-bill-alt ml-2'
         const btnAdd =  document.createElement('button')
