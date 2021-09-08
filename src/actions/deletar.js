@@ -1,5 +1,6 @@
 import CarrinhoTemplate from '../Template/CarrinhoTemplate.js'
 import { carrinho } from '../State/carrinho.js'
+import { valorCarrinho } from './valorCarrinho.js'
 
 const carrinhoView = document.getElementById('carrinho') 
 
@@ -13,11 +14,12 @@ export function deletarItemCarrinho (event){
     }
  
     const produto = carrinho[buttonCurrent.getAttribute('data-produto-id')]
-  
+    
+    carrinho[produto.id].quantidade = 0
     delete carrinho[produto.id]
    
     CarrinhoTemplate()
-
+    valorCarrinho()
 
 }
 

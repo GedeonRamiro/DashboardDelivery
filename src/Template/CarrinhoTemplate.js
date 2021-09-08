@@ -8,6 +8,7 @@ export default function CarrinhoTemplate(){
     Object.values(carrinho).map(produto => produto).map(produto => {
 
         const {id ,imagem, nome, preco, quantidade} = produto
+        const precoQuantidade = preco * quantidade
         
         const divCarrino = document.createElement('div')
         divCarrino.classList = 'grid grid-cols-4 my-4'
@@ -42,7 +43,7 @@ export default function CarrinhoTemplate(){
         const divPreco = document.createElement('div')
         divPreco.classList = 'text-right btn-add'
         const pPreco = document.createElement('p')
-        pPreco.textContent = `R$ ${preco.toFixed(2)}`
+        pPreco.textContent = `R$ ${precoQuantidade.toFixed(2)}`
         const btnIcon = document.createElement('button')
         btnIcon.classList = 'btn-delete outline-none btn-delete'
         btnIcon.setAttribute('data-produto-id', `${id}`)

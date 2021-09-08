@@ -1,9 +1,10 @@
 import CarrinhoTemplate from '../Template/CarrinhoTemplate.js'
 import { carrinho } from '../State/carrinho.js'
+import { valorCarrinho } from './valorCarrinho.js'
 
 const carrinhoView = document.getElementById('carrinho')
 
- export function decrementaQuantidade (event){
+function decrementaQuantidade (event){
     
     const element = event.target
     if(!element.classList.contains('btn-decrementar')) return
@@ -15,10 +16,10 @@ const carrinhoView = document.getElementById('carrinho')
     produto.quantidade > 1 ? --carrinho[produto.id].quantidade : ''
 
     CarrinhoTemplate()
-
+    valorCarrinho()
 } 
 
-export function incrementaQuantidade (event){
+function incrementaQuantidade (event){
 
     const element = event.target
     if(!element.classList.contains('btn-incrementar')) return
@@ -26,11 +27,18 @@ export function incrementaQuantidade (event){
     const produto = carrinho[element.getAttribute('data-produto-id')]
    
     ++carrinho[produto.id].quantidade
-  
+    
     CarrinhoTemplate()
+    valorCarrinho()
 
 }
 
 
 carrinhoView.addEventListener('click', decrementaQuantidade)
 carrinhoView.addEventListener('click', incrementaQuantidade)
+
+export const quantidadeCarrinho = {
+    incrementaQuantidade,
+    decrementaQuantidade
+
+}

@@ -11,7 +11,10 @@ export function adcionarItemCarrinho (event){
     const element = event.target
    
     const produto = produtosId[element.getAttribute('data-id')]
-  
+    
+    const existeItemCarrinho = carrinho[produto.id] = produto
+    if(existeItemCarrinho.quantidade > 1) return
+
     carrinho[produto.id] = produto
     carrinho[produto.id].quantidade = 1
 
