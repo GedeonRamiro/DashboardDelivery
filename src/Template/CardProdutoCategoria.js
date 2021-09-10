@@ -14,15 +14,21 @@ export default function cardProdutoCategoria (event){
     }
 
     const btnAction = divCurrent.id
+    console.log(btnAction)
 
-    const TypeBtn = {
+    const TypeBtn =  btnAction.split('-').pop() 
+   
+
+   /*  const TypeBtn = {
         btnTabAll: 'All',
         btnTabBolo: 'Bolo',
         btnTabPizza: 'Pizza',
         btnTabHambúrguer: 'Hambúrguer',
         btnTabPeixe: 'Peixe',
         btnTabFrutas: 'Frutas'
-      }[btnAction]
+      }[btnAction] */
+
+     
 
 
     const categoriaFilter = produtos.filter(produto => {
@@ -46,12 +52,12 @@ export default function cardProdutoCategoria (event){
         pDescricao.textContent = `${produto.descricao}`
         const pTempo = document.createElement('p')
         pTempo.classList = 'text-gray-400 font-extralight mt-2'
-        pTempo.textContent = `${produto.tempo}`
+        pTempo.textContent = `${produto.tempo} min`
         const iconTempo = document.createElement('i')
         iconTempo.classList = 'far fa-clock ml-2'
         const pPreco = document.createElement('p')
         pPreco.classList = 'mt-2'
-        pPreco.textContent = `${produto.preco}`
+        pPreco.textContent = `${produto.preco.toFixed(2)}`
         const iconPreco = document.createElement('i')
         iconPreco.classList = 'far fa-money-bill-alt ml-2'
         const btnAdd =  document.createElement('button')

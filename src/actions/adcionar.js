@@ -24,8 +24,6 @@ export function adcionarItemCarrinho (event){
 
 
 
-
-
 cardProdutoView.addEventListener('click', adcionarItemCarrinho)
 
 

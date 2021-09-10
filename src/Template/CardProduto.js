@@ -19,7 +19,7 @@ export default function cardProduto (){
         pDescricao.textContent = `${produto.descricao}`
         const pTempo = document.createElement('p')
         pTempo.classList = 'text-gray-400 font-extralight mt-2'
-        pTempo.textContent = `${produto.tempo}`
+        pTempo.textContent = `${produto.tempo} min`
         const iconTempo = document.createElement('i')
         iconTempo.classList = 'far fa-clock ml-2'
         const pPreco = document.createElement('p')

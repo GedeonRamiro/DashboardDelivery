@@ -21,7 +21,7 @@ export default function menuCategorias(){
 
     const btnAll = document.createElement('button')
     btnAll.classList = 'flex justify-center items-center rounded py-1 px-2 outline-none bg-yellow-300 shadow-md'
-    btnAll.setAttribute('id', 'btnTabAll')
+    btnAll.setAttribute('id', 'btn-tab-All')
     const iconAll = document.createElement('i')
     iconAll.classList = 'fas fa-utensils'
     const categoriaAll = document.createElement('p')
@@ -41,7 +41,7 @@ export default function menuCategorias(){
         
         const btn = document.createElement('button')
         btn.classList = 'flex justify-center items-center rounded py-1 px-2 outline-none'
-        btn.setAttribute('id', `btnTab${produto.categoria}`)
+        btn.setAttribute('id', `btn-tab-${produto.categoria}`)
         const icon = document.createElement('i')
         icon.classList = `${produto.icon}`
         const categoria = document.createElement('p')
