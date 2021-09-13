@@ -1,10 +1,15 @@
 
 import { carrinho } from '../State/carrinho.js'
 
-const carrinhoView = document.getElementById('carrinho')
+//const carrinhoView = document.getElementById('carrinho')
+
+const carrinhoView = document.querySelectorAll('#carrinho')
+const [carrinhoTemplate, carrinhoModalTemplate] = carrinhoView
+
 
 export default function CarrinhoTemplate(){
-    carrinhoView.innerHTML = ''
+    carrinhoTemplate.innerHTML = ''
+    carrinhoModalTemplate.innerHTML = ''
     Object.values(carrinho).map(produto => produto).map(produto => {
 
         const {id ,imagem, nome, preco, quantidade} = produto
@@ -69,8 +74,11 @@ export default function CarrinhoTemplate(){
         
         divCarrino.appendChild(divItem)
         divCarrino.appendChild(divPreco)
+
+        const div_clone = divCarrino.cloneNode(true)
         
-        carrinhoView.appendChild(divCarrino)
+        carrinhoTemplate.appendChild(div_clone)
+        carrinhoModalTemplate.appendChild(divCarrino)
     
     })
       

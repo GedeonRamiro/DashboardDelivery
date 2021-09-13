@@ -2,7 +2,8 @@ import CarrinhoTemplate from '../Template/CarrinhoTemplate.js'
 import { carrinho } from '../State/carrinho.js'
 import { valorCarrinho } from './valorCarrinho.js'
 
-const carrinhoView = document.getElementById('carrinho') 
+const carrinhoView = document.querySelectorAll('#carrinho')
+const [carrinhoTemplate, carrinhoModalTemplate] = carrinhoView
 
 export function deletarItemCarrinho (event){
 
@@ -24,6 +25,7 @@ export function deletarItemCarrinho (event){
 }
 
 
-carrinhoView.addEventListener('click', deletarItemCarrinho)
+carrinhoTemplate.addEventListener('click', deletarItemCarrinho)
+carrinhoModalTemplate.addEventListener('click', deletarItemCarrinho)
 
 

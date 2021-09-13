@@ -17,7 +17,8 @@
 
 <body class="font-Josefin-Sans bg-gray-100 ">
     
-    
+    <div class='hidden bg-black bg-opacity-70 inset-0 fixed'></div>
+
     <div class='container mx-auto md:my-20'> 
         <div class='bg-white shadow rounded-xl'>
             <div class='lg:grid lg:grid-cols-4'>
@@ -130,7 +131,52 @@
             </div>
         </div>
     </div>
+
+    <section class='modal-carrinho'>
+            <div id='modal-carrinho' class='hidden flex justify-center items-center absolute inset-0 pt-10 px-4'>
+           
+                <div class='flex-col row-span-1 bg-white p-4 rounded-xl'>
+                    <button>X</button>
+                    <h3 class='text-xl text-center font-semibold'>Meu carrinho</h3>
+                    
+                    <div id='carrinho'>
+                       
+                    </div>
+                    
     
+                    <div class='flex bg-yellow-100 p-4 rounded-md justify-center items-center border border-yellow-200'>
+                        <p class='text-yellow-400 text-lg '>Você tem 3 cupons</p>
+                        <button class='bg-yellow-400 text-white font-semibold rounded-md px-4 py-2 mx-2 outline-none'> User agora </button>
+                    </div>
+    
+                    <div class='border-b-2 border-t-2 mt-20 mb-10 '>
+                        <div class='flex justify-between py-1'>
+                            <p>Subtotal</p>
+                            <span id='subtotal'>R$ 0,00</span>
+                        </div>
+                        <div class='flex justify-between py-1'>
+                            <p>Delivery</p>
+                            <span id='delivery'>R$ 0,00</span>
+                        </div>
+                        <div class='flex justify-between py-1'>
+                            <p>Taxa</p>
+                            <span id='taxa'>R$ 0,00</span>
+                        </div>    
+                    </div>
+                  
+                    <div class='flex justify-between'>
+                        <p class='text-xl font-semibold'>Total</p>
+                        <span id='total' class='text-xl font-semibold'>R$ 0,00</span>
+                    </div>
+                    <div class='flex justify-center'>
+                        <button class='bg-yellow-400 text-white text-xl p-3 mt-10 rounded-full outline-none'>Pedido e checkout <i class="fas fa-arrow-left transform rotate-180"></i></button>
+                    </div>
+                  
+    
+                </div>
+            </div>
+    </section>
+  
     <script type="module" src="app.js"></script>
 </body>
 
