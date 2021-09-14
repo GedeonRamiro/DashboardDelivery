@@ -118,5 +118,25 @@ export const produtos = [
         imagem: "http://lorempixel.com/500/300/food?11",
         icon: 'fas fa-apple-alt',
         categoria: 'Frutas'
+    },
+    {
+        id:'2mnb',
+        nome: 'Cachorro quente da vovô',
+        descricao: 'Milho e batata palha',
+        tempo: 5,
+        preco: 2.5,
+        imagem: "http://lorempixel.com/500/300/food?12",
+        icon: 'fas fa-hotdog',
+        categoria: 'Cachorro Quente'
+    },
+    {
+        id:'7sgt',
+        nome: 'Cachorro Quente com Creme de Leite',
+        descricao: 'Molho de tomate, catchup e maionese',
+        tempo: 5,
+        preco: 2.5,
+        imagem: "http://lorempixel.com/500/300/food?13",
+        icon: 'fas fa-hotdog',
+        categoria: 'Cachorro Quente'
     }
 ]

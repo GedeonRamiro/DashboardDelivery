@@ -2,6 +2,7 @@ import CarrinhoTemplate from '../Template/CarrinhoTemplate.js'
 import { produtosId } from '../Data/data.js'
 import { carrinho } from '../State/carrinho.js'
 import { valorCarrinho } from './valorCarrinho.js'
+import { quantidadeItemCarrinho } from '../Template/CarrinhoQuantidadeTemplate.js'
 
 const cardProdutoView = document.getElementById('card-produto') 
 
@@ -20,6 +21,7 @@ export function adcionarItemCarrinho (event){
 
     CarrinhoTemplate()
     valorCarrinho()
+    quantidadeItemCarrinho()
 }
 
 

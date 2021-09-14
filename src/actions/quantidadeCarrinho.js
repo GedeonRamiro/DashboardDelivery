@@ -1,6 +1,7 @@
 import CarrinhoTemplate from '../Template/CarrinhoTemplate.js'
 import { carrinho } from '../State/carrinho.js'
 import { valorCarrinho } from './valorCarrinho.js'
+import { quantidadeItemCarrinho } from '../Template/CarrinhoQuantidadeTemplate.js'
 
 const carrinhoView = document.querySelectorAll('#carrinho')
 const [carrinhoTemplate, carrinhoModalTemplate] = carrinhoView
@@ -32,6 +33,7 @@ function incrementaQuantidade (event){
     
     CarrinhoTemplate()
     valorCarrinho()
+    quantidadeItemCarrinho()
 
 }
 

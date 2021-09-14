@@ -10,6 +10,8 @@ import {adcionarItemCarrinho} from './Actions/adcionar.js'
 import {deletarItemCarrinho} from './Actions/deletar.js'
 import {quantidadeCarrinho} from './Actions/quantidadeCarrinho.js'
 import {valorCarrinho} from './Actions/valorCarrinho.js'
+import {modalView} from './Template/ModalTemplate.js'
+import {quantidadeItemCarrinho} from './Template/CarrinhoQuantidadeTemplate.js'
 
 
 menuCategoriasBotoes()

@@ -22,6 +22,7 @@ export function valorCarrinho() {
     const quantidadeProdutosTaxa = Object.values(carrinho)
         .map(produto => produto.quantidade)
         .reduce((acc, quantidade) => acc + quantidade, 0)
+    
 
     const taxa = Object.values(carrinho)
         .map(produto => (produto.preco * produto.quantidade) * cobrancaTaxa)
@@ -48,7 +49,7 @@ export function valorCarrinho() {
     deliveryModalTemplate.textContent = `${resultDelivery}` 
     taxaModalTemplate.textContent = `R$ ${taxa.toFixed(2)}`
     totalModalTemplate.textContent = `R$ ${total.toFixed(2)}`
-
+   
 }
 
 
