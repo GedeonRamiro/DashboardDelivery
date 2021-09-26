@@ -110,7 +110,7 @@ export const produtos = [
         categoria: 'Frutas'
     },
     {
-        id:'7sgt',
+        id:'9alt',
         nome: 'Banana empanada',
         descricao: 'Leite condensado e canela',
         tempo: 7,
