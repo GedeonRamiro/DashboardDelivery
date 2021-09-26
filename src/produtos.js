@@ -120,7 +120,7 @@ export const produtos = [
         categoria: 'Frutas'
     },
     {
-        id:'2mnb',
+        id:'3bus',
         nome: 'Cachorro quente da vovô',
         descricao: 'Milho e batata palha',
         tempo: 5,
@@ -130,7 +130,7 @@ export const produtos = [
         categoria: 'Cachorro Quente'
     },
     {
-        id:'7sgt',
+        id:'5zpq',
         nome: 'Cachorro Quente com Creme de Leite',
         descricao: 'Molho de tomate, catchup e maionese',
         tempo: 5,
