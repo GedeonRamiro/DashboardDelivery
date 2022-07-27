@@ -20,6 +20,7 @@ function decrementaQuantidade (event){
 
     CarrinhoTemplate()
     valorCarrinho()
+    quantidadeItemCarrinho()
 } 
 
 function incrementaQuantidade (event){

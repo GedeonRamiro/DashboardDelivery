@@ -3,8 +3,6 @@ import { carrinho } from '../State/carrinho.js'
 const $quantidadeCarrinho = document.getElementById('quantidade-carrinho')
 const $quantidadeCarrinhoItems = document.getElementById('quantidade-itens')
 
-console.log($quantidadeCarrinhoItems)
-
 
 export function quantidadeItemCarrinho() {
 
